@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Meter To Kilometer</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Meter</label>
+            <input id="inputCenti" type="number" placeholder="Meter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Kilometer: <span id="outputkilo"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputkilo").innerHTML = valNum / 1000;
+        }
+    </script>
+
+</body></html>
